@@ -20,11 +20,11 @@ class App extends Component {
     this.props.dispatch(sliderChange(parseInt(e.target.value,10)));
   }
   render() {
-    const playingStyle = (this.props.playing === 'red') ? {backgroundColor: "red"} : {backgroundColor: "blue"};
+    const playingStyle = (this.props.playing === 'red') ? {backgroundColor: "#940000"} : {backgroundColor: "#5075BE"};
     return (
       <div className="main-container">
         <div className="scoreboard">
-          <div className="teamRed-Score">
+          <div className="teamRed-Score">           
             <h3>Team Red</h3>
             <div className="score">{this.props.red}</div>
           </div>

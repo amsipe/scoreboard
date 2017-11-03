@@ -7,7 +7,8 @@ export default (state = {}, action) => {
         case 'INCREMENT' : 
             return {
                 ...state,
-                [action.team]: newState[team] += action.amount    
+                [action.team]: newState[team] += action.amount,
+                playing: action.team === 'red' ? 'blue' : 'red'     
             }
         case 'SLIDER_CHANGE' :
             return {
