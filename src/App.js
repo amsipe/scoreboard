@@ -12,7 +12,6 @@ class App extends Component {
   }
 
   increment(amount,team){
-    console.log(amount,team);
     this.props.dispatch(increment(amount,team));
   }
 
@@ -33,17 +32,8 @@ class App extends Component {
             <div className="score">{this.props.blue}</div>
           </div>
         </div>
-        <div className="controls-container">
-          <div className="controls-red">
-            <button onClick={() => this.increment(1,"red")}>Add 1 Points</button>
-            <button onClick={() => this.increment(2,"red")}>Add 2 Points</button>
-          </div>
-          <div className="controls-blue">
-            <button onClick={() => this.increment(1,"blue")}>Add 1 Points</button>
-            <button onClick={() => this.increment(2,"blue")}>Add 2 Points</button>
-          </div>
-        </div>
         <div className="slide-container">
+          <p>{this.props.playing}'s Turn. Select points to add.</p>
           <input name="slider" style={playingStyle} onChange={this.handleSlider}type="range" min={1} max={50} value={this.props.slider} step={1} className="slider"/>
           <label htmlFor="slider">{this.props.slider}</label>
           <button onClick={()=>{this.increment(this.props.slider,this.props.playing)}}>Add</button>
