@@ -12,6 +12,7 @@ class App extends Component {
   }
 
   increment(amount,team){
+    console.log(amount,team);
     this.props.dispatch(increment(amount,team));
   }
 
