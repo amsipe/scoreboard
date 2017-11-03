@@ -14,7 +14,7 @@ const initialState = {
     blue: 0,
     red: 0,
     slider: 25,
-    playing: 'red'
+    playing: 'Red'
 }
 
 const store = createStore(
