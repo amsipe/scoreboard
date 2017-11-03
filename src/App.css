@@ -1,56 +1,28 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.scoreboard {
-  width: 300px;
-  height: 100px;
-  margin: 30px auto;
-  outline: 1px solid black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.teamRed-Score, .teamBlue-Score {
-  width: 100px;
-  height: 50px;
+.App {
   text-align: center;
 }
-.score {
-  margin-top: 10px;
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
-.controls-container {
-  width: 300px;
-  outline: 1px solid black;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
 }
 
-.slide-container {
-  width: 300px;
-  margin: 20px auto;
+.App-title {
+  font-size: 1.5em;
 }
 
-.slider {
-  width: 100%;
-  height: 15px;
-  outline: none;
-  appearance: none;
-  -webkit-appearance: none;
-  background-color: rgba(0,0,0,.25);
+.App-intro {
+  font-size: large;
 }
 
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none; 
-  appearance: none;
-  width: 15px; 
-  height: 15px; 
-  background: white; 
-  cursor: pointer; 
-  
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
