@@ -12,6 +12,7 @@ class App extends Component {
   }
 
   increment(amount,team){
+    console.log(amount,team);
     this.props.dispatch(increment(amount,team));
   }
 
@@ -19,7 +20,7 @@ class App extends Component {
     this.props.dispatch(sliderChange(parseInt(e.target.value,10)));
   }
   render() {
-    const playingStyle = (this.props.playing === 'red') ? {backgroundColor: "#940000"} : {backgroundColor: "#5075BE"};
+    const playingStyle = (this.props.playing === 'Red') ? {backgroundColor: "#940000"} : {backgroundColor: "#5075BE"};
     return (
       <div className="main-container">
         <div className="scoreboard">
